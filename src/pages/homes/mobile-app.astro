@@ -15,10 +15,14 @@ import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
 
 const appStoreImg = '~/assets/images/app-store.png';
+<<<<<<< HEAD
 const appStoreDownloadLink = 'https://github.com/onwidget/astrowind';
 
 const googlePlayImg = '~/assets/images/google-play.png';
 const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
+=======
+const googlePlayImg = '~/assets/images/google-play.png';
+>>>>>>> a77486e55bf8d5fb8a1584e57f36d52de0a08551
 
 const metadata = {
   title: 'Mobile App Homepage',
@@ -56,9 +60,13 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
+<<<<<<< HEAD
       <span class="text-accent dark:text-white highlight">AstroWind App</span>: <br /> professional websites <span
         class="hidden xl:inline">made easy</span
       >
+=======
+      <span class="text-accent dark:text-white highlight">AstroWind App</span>: <br /> professional websites <span class="hidden xl:inline">made easy</span>
+>>>>>>> a77486e55bf8d5fb8a1584e57f36d52de0a08551
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -69,16 +77,25 @@ const metadata = {
     </Fragment>
 
     <div slot="actions" class="flex max-w-sm gap-4">
+<<<<<<< HEAD
       <Button variant="link" href={appStoreDownloadLink}>
         <Image src={appStoreImg} alt="App Store Image" width={200} />
       </Button>
 
       <Button variant="link" href={googlePlayDownloadLink}>
+=======
+      <Button variant="link">
+        <Image src={appStoreImg} alt="App Store Image" width={200} />
+      </Button>
+
+      <Button variant="link">
+>>>>>>> a77486e55bf8d5fb8a1584e57f36d52de0a08551
         <Image src={googlePlayImg} alt="Google Play Image" width={200} />
       </Button>
     </div>
   </Hero2>
 
+<<<<<<< HEAD
   <!-- Features3 Widget ************** -->
 
   <Features3
@@ -294,4 +311,7 @@ const metadata = {
       </Button>
     </div>
   </CallToAction>
+=======
+  <!-- Le reste du contenu ne change pas -->
+>>>>>>> a77486e55bf8d5fb8a1584e57f36d52de0a08551
 </Layout>
