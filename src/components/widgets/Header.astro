@@ -122,16 +122,6 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
             )}
           </li>
         ))}
-
-        {/* ✅ Bouton spécial Mobile App */}
-        <li>
-          <a
-            href="/homes/mobile-app"
-            class="ml-2 px-4 py-2 mt-2 md:mt-0 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition text-sm font-semibold whitespace-nowrap"
-          >
-            📱 Mobile App
-          </a>
-        </li>
       </ul>
     </nav>
 
@@ -154,6 +144,12 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
             </a>
           )}
         </div>
+        <a
+          href="/homes/mobile-app"
+          class="ml-4 rtl:ml-0 rtl:mr-4 px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition text-sm font-semibold whitespace-nowrap"
+        >
+          📱 Mobile App
+        </a>
         {actions?.length ? (
           <span class="ml-4 rtl:ml-0 rtl:mr-4">
             {actions.map((btnProps) => (
