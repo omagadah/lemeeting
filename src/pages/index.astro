@@ -1,0 +1,57 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Le Meeting 💬 — Créons, partageons, motivons-nous ensemble !',
+  description: "Le Meeting est une communauté pour s’exprimer, partager et évoluer ensemble. Rejoins-nous !",
+  image: 'https://www.lemeeting.fr/og-image.jpg',
+  ogLocale: 'fr_FR',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Rejoindre le Discord',
+        href: 'https://discord.gg/lemeeting',
+        target: '_blank',
+        icon: 'tabler:message',
+      },
+      { text: 'En savoir plus', href: '#features' },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Image Le Meeting' }}
+  >
+    <Fragment slot="title">
+      Bienvenue sur <span class="text-accent dark:text-white highlight">Le Meeting 💬</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Le Meeting est un espace communautaire pour s’exprimer, partager, se motiver et créer ensemble. Rejoins-nous sur Discord pour vivre l'expérience !
+    </Fragment>
+  </Hero>
+
+  <!-- Widgets conservés pour structure -->
+  <Note />
+  <Features />
+  <Content />
+  <Steps />
+  <Features2 />
+  <BlogLatestPosts />
+  <FAQs />
+  <Stats />
+  <CallToAction />
+</Layout>
